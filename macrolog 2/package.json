@@ -1,0 +1,28 @@
+{
+  "name": "macrolog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Calorie and macro tracker, published as a Claude Artifact",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:local": "node build.mjs --local",
+    "watch": "node build.mjs --watch",
+    "pretest": "node build.mjs --local",
+    "test": "node test/run-all.mjs",
+    "postinstall": "playwright install chromium",
+    "build:open": "node build.mjs --open",
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "@zxing/library": "^0.21.3"
+  },
+  "devDependencies": {
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/figtree": "^5.3.0",
+    "esbuild": "^0.28.2",
+    "playwright": "^1.56.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
